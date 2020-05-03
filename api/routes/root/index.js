@@ -13,11 +13,11 @@ router.get("/", (req, res, next) => {
       twitter: "https://twitter.com/dannyeka"
     },
     api: [
-      { randomfaker: "https://myrest.now.sh/faker" },
-      { posts: "https://myrest.now.sh/posts" },
-      { albums: "https://myrest.now.sh/albums" },
-      { todos: "https://myrest.now.sh/todos" },
-      { users: "https://myrest.now.sh/users" }
+      { randomfaker: "https://api.twolevel.net/faker" },
+      { posts: "https://api.twolevel.net/posts" },
+      { albums: "https://api.twolevel.net/albums" },
+      { todos: "https://api.twolevel.net/todos" },
+      { users: "https://api.twolevel.net/users" }
     ]
   });
 });
