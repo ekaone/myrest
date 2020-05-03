@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/faker",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/posts",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/albums",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/todos",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/users",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    }
+  ]
+}

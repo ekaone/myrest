@@ -13,11 +13,11 @@ router.get("/", (req, res, next) => {
       twitter: "https://twitter.com/dannyeka"
     },
     api: [
-      { randomfaker: "http://localhost:5001/faker" },
-      { posts: "http://localhost:5001/posts" },
-      { albums: "http://localhost:5001/albums" },
-      { todos: "http://localhost:5001/todos" },
-      { users: "http://localhost:5001/users" }
+      { randomfaker: "https://myrest.now.sh/faker" },
+      { posts: "https://myrest.now.sh/posts" },
+      { albums: "https://myrest.now.sh/albums" },
+      { todos: "https://myrest.now.sh/todos" },
+      { users: "https://myrest.now.sh/users" }
     ]
   });
 });
