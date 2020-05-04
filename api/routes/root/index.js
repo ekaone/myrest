@@ -17,7 +17,8 @@ router.get("/", (req, res, next) => {
       { posts: "https://api.twolevel.net/posts" },
       { albums: "https://api.twolevel.net/albums" },
       { todos: "https://api.twolevel.net/todos" },
-      { users: "https://api.twolevel.net/users" }
+      { users: "https://api.twolevel.net/users" },
+      { quotes: "https://api.twolevel.net/quotes" }
     ]
   });
 });

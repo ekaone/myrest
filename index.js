@@ -9,6 +9,7 @@ const jsonPosts = require("./api/routes/posts");
 const jsonAlbums = require("./api/routes/albums");
 const jsonTodos = require("./api/routes/todos");
 const jsonUsers = require("./api/routes/users");
+const jsonQuotes = require("./api/routes/quotes");
 
 // Cross Origin
 app.use(cors());
@@ -20,6 +21,7 @@ app.use("/posts", jsonPosts);
 app.use("/albums", jsonAlbums);
 app.use("/todos", jsonTodos);
 app.use("/users", jsonUsers);
+app.use("/quotes", jsonQuotes);
 
 // Handle Error Routes
 app.use((req, res, next) => {
