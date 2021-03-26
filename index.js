@@ -10,6 +10,7 @@ const jsonAlbums = require("./api/routes/albums");
 const jsonTodos = require("./api/routes/todos");
 const jsonUsers = require("./api/routes/users");
 const jsonQuotes = require("./api/routes/quotes");
+const jsonScrap = require("./api/routes/scrap");
 
 // Cross Origin
 app.use(cors());
@@ -22,6 +23,7 @@ app.use("/albums", jsonAlbums);
 app.use("/todos", jsonTodos);
 app.use("/users", jsonUsers);
 app.use("/quotes", jsonQuotes);
+app.use("/scrap", jsonScrap);
 
 // Handle Error Routes
 app.use((req, res, next) => {

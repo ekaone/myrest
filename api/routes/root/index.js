@@ -10,16 +10,23 @@ router.get("/", (req, res, next) => {
       author: "Eka",
       country: "Indonesia",
       city: "Jakarta",
-      twitter: "https://twitter.com/dannyeka"
+      twitter: "https://twitter.com/dannyeka",
     },
     api: [
-      { randomfaker: "https://api.twolevel.net/faker" },
-      { posts: "https://api.twolevel.net/posts" },
-      { albums: "https://api.twolevel.net/albums" },
-      { todos: "https://api.twolevel.net/todos" },
-      { users: "https://api.twolevel.net/users" },
-      { quotes: "https://api.twolevel.net/quotes" }
-    ]
+      { randomfaker: "https://myrest.now.sh/faker" },
+      { posts: "https://myrest.now.sh/posts" },
+      { albums: "https://myrest.now.sh/albums" },
+      { todos: "https://myrest.now.sh/todos" },
+      { users: "https://myrest.now.sh/users" },
+      { quotes: "https://myrest.now.sh/quotes" },
+      {
+        scrap: {
+          endpoint: "https://myrest.now.sh/scrap",
+          example:
+            "https://myrest.now.sh/scrap/https%3A%2F%2Fstackoverflow.com%2F",
+        },
+      },
+    ],
   });
 });
 
