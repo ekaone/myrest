@@ -1,7 +1,6 @@
 const express = require("express");
-const { scraped } = require("./scraped");
-
 const router = express.Router();
+const { scraped } = require("./scraped");
 
 router.get("/:uri", (req, res, next) => {
   try {
