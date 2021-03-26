@@ -38,8 +38,8 @@
       "methods": ["GET"]
     },
     {
-      "src": "/scrap/:uri",
-      "dest": "/:uri",
+      "src": "/scrap/(?<uri>[^/]+)",
+      "dest": "/index.js?uri=$uri",
       "methods": ["GET"]
     }
   ]
