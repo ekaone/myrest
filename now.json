@@ -39,7 +39,7 @@
     },
     {
       "src": "/scrap/:uri",
-      "dest": "/api/routes/scrap/:uri",
+      "dest": "/:uri",
       "methods": ["GET"]
     }
   ]
