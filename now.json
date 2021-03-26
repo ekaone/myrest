@@ -1,12 +1,46 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/" },
-    { "source": "/faker", "destination": "/index.js" },
-    { "source": "/posts", "destination": "/index.js" },
-    { "source": "/albums", "destination": "/index.js" },
-    { "source": "/todos", "destination": "/index.js" },
-    { "source": "/users", "destination": "/index.js"},
-    { "source": "/quotes", "destination": "/index.js"},
-    { "source": "/scrap/:uri", "destination": "/index.js"}
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/faker",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/posts",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/albums",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/todos",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/users",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/quotes",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/scrap/(?<uri>[^/]*)",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    }
   ]
 }
