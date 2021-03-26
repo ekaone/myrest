@@ -36,11 +36,7 @@
       "src": "/quotes",
       "dest": "/index.js",
       "methods": ["GET"]
-    },
-    {
-      "src": "/scrap/(?<uri>[^/]+)",
-      "dest": "/index.js?uri=$uri",
-      "methods": ["GET"]
     }
-  ]
+  ],
+  "rewrites": [{ "source": "/scrap/:uri", "destination": "/api/routes/scrap" }]
 }
