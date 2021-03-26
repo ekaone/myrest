@@ -36,6 +36,11 @@
       "src": "/quotes",
       "dest": "/index.js",
       "methods": ["GET"]
+    },
+    {
+      "src": "/scrap",
+      "dest": "/index.js",
+      "methods": ["GET"]
     }
   ]
 }
