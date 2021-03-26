@@ -39,7 +39,7 @@
     },
     {
       "src": "/scrap/(?<uri>[^/]+)",
-      "dest": "/index.js?uri=$uri",
+      "dest": "/index.js",
       "methods": ["GET"]
     }
   ]
